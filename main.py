@@ -13,7 +13,7 @@ def new_handler(message):
 
 @bot.message_handler(commands=["musical"])
 def musical_handler(message):
-    bot.send_message(message.chat.id, ("**Все о самом популярном музыкальном инструменте**)[https://ru.m.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D0%B5%D0%BF%D0%B8%D0%B0%D0%BD%D0%BE]"),parse_mode="Markdown")
+    bot.send_message(message.chat.id, "**Все о самом популярном музыкальном инструменте**)[https://ru.m.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%82%D0%B5%D0%BF%D0%B8%D0%B0%D0%BD%D0%BE]",parse_mode="Markdown")
 
 @bot.message_handler(commands=["all"])
 def all_handler(message):
